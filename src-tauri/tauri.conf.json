@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Firaw Network",
+  "mainBinaryName": "FirawNetwork",
+  "version": "0.2.1",
+  "identifier": "br.com.firawynix.network",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5190",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Firaw Network",
+        "width": 1500,
+        "height": 920,
+        "minWidth": 1100,
+        "minHeight": 700,
+        "center": true,
+        "backgroundColor": "#080d16"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src ipc: http://ipc.localhost; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "publisher": "Firawynix",
+    "shortDescription": "Descoberta e monitoramento de rede",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": [
+          "PortugueseBR"
+        ],
+        "installerIcon": "icons/icon.ico"
+      },
+      "certificateThumbprint": "668BEF56480FCA8EB1B0BC3B102A6A9CEC554CC4",
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "http://timestamp.digicert.com",
+      "tsp": true
+    },
+    "resources": {
+      "../packaging/FirawNetwork.cer": "FirawNetwork.cer"
+    }
+  }
+}

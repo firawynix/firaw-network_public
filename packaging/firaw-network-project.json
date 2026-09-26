@@ -1,0 +1,51 @@
+{
+  "id": "firaw-network",
+  "slug": "firaw-network",
+  "nome": "Firaw Network",
+  "subtitulo": "Sua rede, à vista",
+  "descricao": "Descubra dispositivos e sub-redes, analise portas TCP e monitore latência e disponibilidade. Integração FortiGate por API e SSH.",
+  "tipo": "download",
+  "categoria": "projeto",
+  "generos": [
+    "Rede",
+    "Monitoramento"
+  ],
+  "cor": "#22d3ee",
+  "capa": "https://ipscan.firawynix.com.br/assets/dashboard.png",
+  "banner": null,
+  "icone": "https://ipscan.firawynix.com.br/assets/icon.png",
+  "downloadUrl": "https://ipscan.firawynix.com.br/downloads/Firaw-Network-Instalador-Online.exe",
+  "downloadTamanho": 116864,
+  "downloadSha256": "dcf03382dfec5f866d8dfed3ac84148fd478ce840d0974701dbbd024935994ea",
+  "versao": "0.2.1",
+  "winSignerThumbprint": "668BEF56480FCA8EB1B0BC3B102A6A9CEC554CC4",
+  "winChave": "Firaw Network",
+  "winExe": "FirawNetwork.exe",
+  "winCaminhos": [
+    "%LOCALAPPDATA%\\Firaw Network\\FirawNetwork.exe"
+  ],
+  "winInstalador": "nsis",
+  "instaladoTamanho": null,
+  "manifestoUrl": null,
+  "winLimpeza": [],
+  "linux": null,
+  "disponivel": true,
+  "extras": [
+    {
+      "rotulo": "Instalador completo · Windows x64",
+      "url": "https://ipscan.firawynix.com.br/downloads/Firaw-Network-0.2.1-x64-Setup.exe"
+    },
+    {
+      "rotulo": "Certificado público (.cer)",
+      "url": "https://ipscan.firawynix.com.br/downloads/FirawNetwork.cer"
+    },
+    {
+      "rotulo": "Código-fonte no GitHub",
+      "url": "https://github.com/hugomendoncaraizen/firaw-network"
+    }
+  ],
+  "jogarUrl": null,
+  "siteUrl": "https://ipscan.firawynix.com.br/",
+  "destaque": false,
+  "ordem": 60
+}

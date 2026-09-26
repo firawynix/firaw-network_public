@@ -1,0 +1,20 @@
+[package]
+name = "firaw-network"
+version = "0.2.1"
+edition = "2021"
+
+[lib]
+name = "firaw_network_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "native-tls"] }
+ssh2 = { version = "0.9.6", features = ["openssl-on-win32", "vendored-openssl"] }
+tokio = { version = "1", features = ["time"] }

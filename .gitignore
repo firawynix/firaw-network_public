@@ -1,0 +1,12 @@
+node_modules/
+dist/
+src-tauri/target/
+.env
+*.log
+release/
+site/public/downloads/
+*.pfx
+*.p12
+*.pem
+*.key
+.env.*
