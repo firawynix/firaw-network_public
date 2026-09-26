@@ -1,0 +1,13 @@
+{
+  "storeIdentityName": "Firawynix.FirawNetwork",
+  "siteIdentityName": "Firawynix.Network",
+  "applicationId": "FirawNetwork",
+  "displayName": "Firaw Network",
+  "publisherDisplayName": "Firawynix",
+  "description": "Inventário de rede, análise de portas TCP e monitoramento de disponibilidade e latência.",
+  "version": "0.2.2",
+  "architecture": "x64",
+  "executable": "FirawNetwork.exe",
+  "icon": "../../src-tauri/icons/256x256.png",
+  "payloadPath": "../../src-tauri/target/release/FirawNetwork.exe"
+}

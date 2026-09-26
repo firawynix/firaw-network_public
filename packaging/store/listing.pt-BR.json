@@ -1,0 +1,17 @@
+{
+  "name": "Firaw Network",
+  "shortDescription": "Descubra sua rede, analise portas e acompanhe latência e disponibilidade.",
+  "description": "Sua rede, à vista. O Firaw Network reúne descoberta de dispositivos, inventário e monitoramento em uma interface escura com detalhes ciano.\n\nDescubra dispositivos em faixas IPv4, visualize portas TCP e serviços e dê nomes aos equipamentos. Explore sub-redes conhecidas pelas interfaces e rotas do Windows ou importadas do FortiGate por API e SSH. A varredura depende das rotas e permissões da rede: redes escondidas atrás de NAT precisam de configuração no roteador ou coleta na própria sub-rede.\n\nAnalise portas comuns, de 1 a 1024, de 1 a 65535 ou uma faixa personalizada. O mecanismo próprio consulta banners de serviços quando disponíveis e permite acompanhar ou cancelar a análise.\n\nAcompanhe disponibilidade, latência em milissegundos, falhas e variação por dispositivo, em intervalos configuráveis. O monitor continua enquanto o aplicativo estiver aberto, inclusive minimizado.\n\nConsulte informações do FortiGate por API ou SSH com suas credenciais e abra serviços como SSH, RDP e páginas de administração. Informações de processos exigem acesso autorizado ao computador; dados de tráfego dependem do equipamento e da API configurada.\n\nO inventário fica local e pode ser exportado em CSV. Não é necessário criar conta Firawynix. Windows 10 versão 2004 ou posterior e Windows 11, 64 bits. Requer Microsoft Edge WebView2 Runtime. Use apenas em redes e dispositivos que você administra ou tem autorização para consultar.",
+  "features": [
+    "Descoberta de dispositivos e sub-redes IPv4 acessíveis",
+    "Inventário com nomes personalizados e exportação CSV",
+    "Análise detalhada de portas TCP com progresso e cancelamento",
+    "Monitoramento de disponibilidade e latência em tempo real",
+    "Integração FortiGate por API e SSH",
+    "Interface escura com identidade ciano e código-fonte público"
+  ],
+  "privacyUrl": "https://ipscan.firawynix.com.br/privacidade.html",
+  "websiteUrl": "https://ipscan.firawynix.com.br/",
+  "supportUrl": "https://firawynix.com.br/#contato",
+  "certificationNotes": "Desktop app built with Tauri 2 and Rust. runFullTrust is required for Windows network interface/route discovery, ping/ARP processes, TCP connections, SSH sessions and user-initiated RDP/service launches. No elevation or background Windows service is required. No Firawynix login is needed. Microsoft Edge WebView2 Runtime is required. Test discovery with a permitted IPv4 subnet or 127.0.0.1/32; open a discovered host and start TCP analysis. Monitoring can be added from that inventory. FortiGate is optional and requires the tester's authorized device and credentials. Screenshots show the actual application interface before a scan, without private network data."
+}

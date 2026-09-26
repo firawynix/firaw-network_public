@@ -16,6 +16,9 @@ d.arc(box((50,47,206,203)),270,360,fill='#73efff',width=9*s)
 d.ellipse(box((114,111,142,139)),fill='#d6fbff')
 for x in [63,166]: d.rounded_rectangle(box((x,154,x+31,185)),radius=8*s,fill='#0b2330',outline='#39d8f0',width=6*s)
 d.ellipse(box((173,60,193,80)),fill='#73efff')
+store_assets = root/'packaging/store'
+store_assets.mkdir(parents=True, exist_ok=True)
+im.resize((300,300),Image.Resampling.LANCZOS).save(store_assets/'store-logo.png')
 im = im.resize((256,256),Image.Resampling.LANCZOS)
 icons = root/'src-tauri/icons'
 icons.mkdir(exist_ok=True)

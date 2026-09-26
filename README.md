@@ -80,6 +80,24 @@ estáticos. A configuração Docker usa uma rede externa existente no servidor.
 hashes reais. `site/catalog.sql` atualiza o catálogo e o portfólio; sua aplicação
 deve ocorrer no ambiente Firawynix, após os downloads estarem disponíveis.
 
+## Pacote para a Microsoft Store
+
+A identidade reservada é `Firawynix.FirawNetwork` e o ID é `9N38CQ340VZX`.
+O primeiro envio está em certificação desde 26/09/2026, com publicação
+automática após aprovação. O pacote da Store é `0.2.2.0` e contém o aplicativo
+`0.2.1`.
+Os dados de publicação e as imagens sem inventário privado ficam em
+`packaging/store`. Para gerar o MSIX x64 com o executável já compilado:
+
+```powershell
+powershell -NoProfile -File tools/build-msix.ps1 -Config packaging/store/msix.json -Channel Store -Publisher CN=1FDE3668-C222-4506-AFE6-E2E425EAECD8 -OutputDirectory release/store
+```
+
+O pacote usa a identidade do Partner Center. A Microsoft assina o pacote
+distribuído pela Store; o certificado do instalador do site não é usado para
+assinar esse MSIX. A distribuição depende da certificação da Microsoft.
+O Microsoft Edge WebView2 Runtime deve estar instalado.
+
 ## FortiGate
 
 Crie no FortiOS um administrador REST API com permissão somente leitura e restrinja os Trusted Hosts ao IP da estação. A aplicação exige HTTPS com certificado confiável e envia o token no cabeçalho `Authorization: Bearer`; o token não é gravado no inventário nem no armazenamento local. Os campos e endpoints podem variar conforme a versão do FortiOS. Consulte o modelo e a versão antes de ajustar a integração para uso contínuo.
