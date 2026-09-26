@@ -83,9 +83,8 @@ deve ocorrer no ambiente Firawynix, após os downloads estarem disponíveis.
 ## Pacote para a Microsoft Store
 
 A identidade reservada é `Firawynix.FirawNetwork` e o ID é `9N38CQ340VZX`.
-O primeiro envio está em certificação desde 26/09/2026, com publicação
-automática após aprovação. O pacote da Store é `0.2.2.0` e contém o aplicativo
-`0.2.1`.
+O aplicativo está publicado na [Microsoft Store](https://apps.microsoft.com/detail/9N38CQ340VZX).
+O pacote da Store é `0.2.2.0` e contém o aplicativo `0.2.1`.
 Os dados de publicação e as imagens sem inventário privado ficam em
 `packaging/store`. Para gerar o MSIX x64 com o executável já compilado:
 

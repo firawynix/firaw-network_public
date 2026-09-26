@@ -8,6 +8,7 @@
   "applicationVersion": "0.2.1",
   "packageVersion": "0.2.2.0",
   "submissionId": "1152921505701982846",
-  "status": "inCertification",
-  "submittedOn": "2026-09-26"
+  "status": "published",
+  "submittedOn": "2026-09-26",
+  "publishedOn": "2026-09-26"
 }

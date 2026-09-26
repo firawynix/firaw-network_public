@@ -103,6 +103,12 @@
       details.append(summary, menu);
       nav.append(details);
     }
+    if (project === 'firawnetwork') {
+      const storeLink = makeLink('⊞ Microsoft Store ↗', 'https://apps.microsoft.com/detail/9N38CQ340VZX', 'fw-footer-store');
+      storeLink.setAttribute('aria-label', 'Abrir Firaw Network na Microsoft Store');
+      nav.append(storeLink);
+      document.body.classList.add('fw-footer-store-active');
+    }
     nav.append(makeLink('GitHub ↗', item.github || 'https://github.com/firawynix'));
     nav.append(makeLink('Portfólio ↗', 'https://firawynix.com.br/'));
     nav.append(makeLink('♥ Apoiar', `https://firawynix.com.br/apoie?de=${encodeURIComponent(item.support)}`, 'fw-footer-support'));
