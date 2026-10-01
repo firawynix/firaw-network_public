@@ -4,7 +4,7 @@ Aplicativo Windows para descoberta, inventário e análise de dispositivos em re
 
 [Site e demonstração](https://ipscan.firawynix.com.br/) ·
 [Instalador online](https://ipscan.firawynix.com.br/downloads/Firaw-Network-Instalador-Online.exe) ·
-[Código público](https://github.com/hugomendoncaraizen/firaw-network)
+[Código público](https://github.com/firawynix/firaw-network_public)
 
 ## Instalar
 

@@ -3,7 +3,7 @@
   const script = document.currentScript;
   const project = script?.dataset.project;
   const projects = {
-    firawnetwork: { name: 'Firaw Network', support: 'firawnetwork', github: 'https://github.com/hugomendoncaraizen/firaw-network', downloads: [['Instalador online · Windows x64', '/downloads/Firaw-Network-Instalador-Online.exe'], ['Instalador completo · Windows x64', '/downloads/Firaw-Network-0.2.1-x64-Setup.exe'], ['Certificado público (.cer)', '/downloads/FirawNetwork.cer']] },
+    firawnetwork: { name: 'Firaw Network', support: 'firawnetwork', github: 'https://github.com/firawynix/firaw-network_public', downloads: [['Instalador online · Windows x64', '/downloads/Firaw-Network-Instalador-Online.exe'], ['Instalador completo · Windows x64', '/downloads/Firaw-Network-0.2.1-x64-Setup.exe'], ['Certificado público (.cer)', '/downloads/FirawNetwork.cer']] },
     firawssh: { name: 'Firaw SSH', support: 'firawssh', downloads: [
       ['Instalador online · Windows', 'https://ssh.firawynix.com.br/downloads/Firaw-SSH-Instalador-Online.exe'],
       ['Microsoft Store', 'https://apps.microsoft.com/detail/9PBH4PV7XHG8'],

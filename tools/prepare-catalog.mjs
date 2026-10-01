@@ -6,7 +6,7 @@ const dir = path.join(root,'site/public/downloads');
 const online = 'Firaw-Network-Instalador-Online.exe';
 const file = fs.readFileSync(path.join(dir,online));
 const base = 'https://ipscan.firawynix.com.br';
-const repo = 'https://github.com/hugomendoncaraizen/firaw-network';
+const repo = 'https://github.com/firawynix/firaw-network_public';
 const entry = { id:'firaw-network',slug:'firaw-network',nome:'Firaw Network',subtitulo:'Sua rede, à vista',descricao:'Descubra dispositivos e sub-redes, analise portas TCP e monitore latência e disponibilidade. Integração FortiGate por API e SSH.',tipo:'download',categoria:'projeto',generos:['Rede','Monitoramento'],cor:'#22d3ee',capa:`${base}/assets/dashboard.png`,banner:null,icone:`${base}/assets/icon.png`,downloadUrl:`${base}/downloads/${online}`,downloadTamanho:file.length,downloadSha256:crypto.createHash('sha256').update(file).digest('hex'),versao:'0.2.1',winSignerThumbprint:'668BEF56480FCA8EB1B0BC3B102A6A9CEC554CC4',winChave:'Firaw Network',winExe:'FirawNetwork.exe',winCaminhos:['%LOCALAPPDATA%\\Firaw Network\\FirawNetwork.exe'],winInstalador:'nsis',instaladoTamanho:null,manifestoUrl:null,winLimpeza:[],linux:null,disponivel:true,extras:[{rotulo:'Instalador completo · Windows x64',url:`${base}/downloads/Firaw-Network-0.2.1-x64-Setup.exe`},{rotulo:'Certificado público (.cer)',url:`${base}/downloads/FirawNetwork.cer`},{rotulo:'Código-fonte no GitHub',url:repo}],jogarUrl:null,siteUrl:base+'/',destaque:false,ordem:60 };
 fs.writeFileSync(path.join(root,'packaging/firaw-network-project.json'),JSON.stringify(entry,null,2)+'\n');
 const q = value => value == null ? 'NULL' : "'"+String(value).replaceAll("'","''")+"'";
